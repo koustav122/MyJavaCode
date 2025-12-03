@@ -2,7 +2,8 @@ public class spellChecker {
     public static int solve (char[] s1, char[] s2, int i, int j) {
         if(i == s1.length) return s2.length;
         if(j == s2.length) return s1.length - i;
-        int count = 0;
+        //int count = 0;
+
         if(s1[i] == s2[j]) {
             return solve(s1, s2, i + 1, j + 1);
         } else {
